@@ -1,0 +1,15 @@
+class Carro:
+    # Método construtor para criar o objeto
+    def __init__(self, modelo, cor):
+        self.modelo = modelo
+        self.cor = cor
+        self.ligado = False
+
+    # Método (função da POO) para ligar o carro
+    def ligar(self):
+        self.ligado = True
+        print(f"O {self.modelo} está ligado.")
+
+# Criando um objeto e chamando o método
+meu_carro = Carro("Fusca", "Azul")
+meu_carro.ligar()

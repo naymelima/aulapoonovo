@@ -1,0 +1,51 @@
+#Loja Renner
+loja = int(input('Seja bem-vindo(a) ao site de compras da loja Renner! O que deseja fazer? ' \
+'\n1 - Pagar fatura;' \
+'\n2 - Consultar carrinho: '))
+if loja == 1:
+    fatura = float(input('Digite o valor da sua fatura atual: '))
+    print(f'O valor da sua fatura é: {fatura}')
+    pay = int(input('Escolha a forma de pagamento: ' \
+    '\n1 - Cartão de crédito (parcelado);' \
+    '\n2 - Cartão de crédito à vista;' \
+    '\n3 - Pagamento via Pix: '))
+    if pay == 1:
+       valor = float(input('Digite o valor que deseja parcelar: '))
+       parcela = int(input('Escolha a quantidade de parcelas: ' \
+       '\n1 - 2x;' \
+       '\n2 - 4x; ' \
+       '\n3 - 6x;' \
+       '\n4 - 8x;' \
+       '\n5 - 10x: '))
+       if parcela == 1:
+           vf = valor/2
+           print(f'O valor de sua parcela é de: {vf}')
+
+       elif parcela == 2:
+           vf = valor/4
+           print(f'O valor de sua parcela é de: {vf}')
+
+       elif parcela == 3:
+           vf = valor/6
+           print(f'O valor de sua parcela é de: {vf}')
+
+       elif parcela == 4:
+            vf = valor/8
+            print(f'O valor de sua parcela é de: {vf}')
+
+       elif parcela == 5:
+            vf = valor/10
+            print(f'O valor de sua parcela é de: {vf}') 
+
+    elif pay == 2:
+        dados = int(input('Digite o número do seu cartâo: '))
+        print('Pagamento feito. Até próximo mês!')
+
+    elif pay == 3:
+        print('Código: 123.456.789. Copie e cole no seu banco.')
+
+    
+
+
+
+    
