@@ -1,3 +1,26 @@
-nome = imput("digite o seu nome: "0
+class Cartao:
+    def pagar(self):
+        print('Pagamento via cartão.')
 
+class Dinheiro:
+    def pagar(self):
+        print('Pagamento em dinheiro.')
+
+
+class Pix:
+    def pagar(self):
+        print('Pagamento via pix.')
+
+
+def realizar_pagamento(tipo):
+    tipo.pagar()
+
+
+cartao = Cartao()
+dinheiro = Dinheiro()
+pix = Pix()
+
+realizar_pagamento(cartao)
+realizar_pagamento(dinheiro)
+realizar_pagamento(pix)
 
