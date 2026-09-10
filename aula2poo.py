@@ -14,7 +14,7 @@ class Livro:
             def ler(self):
                 return "Estou lendo um livro de terror."
 
-            class ficcao(Livro):
+        class ficcao(Livro):
                 def ler(self):
                     return "Estou lendo um livro de ficção."
 
